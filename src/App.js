@@ -1,20 +1,41 @@
 import React from "react";
 import "./styles/style.scss";
+import Curso from "./Curso";
 
 // caso que jsx no se use
 const App = () => (
-    //Aqui se importa un solo elemento (el div) pero dentro de el pueden ir varios
-    //<Fragment></Fragment> primeraforma
     <>
-        <div>
-            <h1 className="saludo">Hola Mundo</h1>
-            <p>Hola, saludando desde mi componente</p>
+        <div className="main-banner img-container l-section" id="main-banner">
+            <div className="ed-grid lg-grid-6">
+                <div className="lg-cols-4 lg-x-2">
+                    <img
+                        className="main-banner__img"
+                        alt="banner"
+                        src="https://images.pexels.com/photos/597909/pexels-photo-597909.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    />
+                    <div className="main-banner__data s-center">
+                        <p className="t2 s-mb-0">Cursos de EDteam</p>
+                        <p> Tu futuro te está esperando</p>
+                        <a href="http://ed.team" className="button">
+                            Suscribirse
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <img
-                src="https://drupal.ed.team/sites/default/files/imagenes-cdn-edteam/2019-04/React%20Rutas%20manejo%20de%20estados%20%281%29.png"
-                alt=""
-            />
+        <div className="ed-grid m-grid-3">
+            <Curso />
+            <Curso />
+            <Curso />
+            <Curso />
+            <Curso />
+            <Curso />
+            <Curso />
+            <Curso />
+            <Curso />
+            <Curso />
+            <Curso />
+            <Curso />
         </div>
     </>
 );
