@@ -23,3 +23,4 @@ export default App;
 //1: Toda etiqueta debe cerrarse
 //2 : Los componentes deben devolver un solo elemento padre
 //3: Apoyarse de los Fragment cuando necesito devolver 2 elementos
+//4: Fragment o <> hijos </>
